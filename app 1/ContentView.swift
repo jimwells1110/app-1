@@ -10,11 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List(0 ..< 5) { item in
-            Text("Hello, Wabbit!")
-                .foregroundColor(.green)
-            Image(systemName: "hare")
-
+        VStack {
+            Image("pancake")
+            HeaderView(label: "pancakes")
         }
     }
 }
@@ -22,10 +20,31 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
+//            ContentView()
+//                .previewDevice(.init(rawValue: "iPhone 11 Pro Max"))
             ContentView()
-                .previewDevice(.init(rawValue: "iPhone 11 Pro Max"))
-            ContentView()
-                .previewDevice(.init(rawValue: "iPhone SE"))
+                .previewDevice(.init(rawValue: "iPhone 7"))
+            
+//            ContentView()
+//                .previewDevice(.init(rawValue: "iPhone SE"))
         }
     }
 }
+
+// new file
+
+struct HeaderView: View {
+    let label: String
+    
+    var body: some View {
+        HStack {
+            Text(label)
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            Spacer()
+        }
+        .padding()
+    }
+}
+
