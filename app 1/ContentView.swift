@@ -10,12 +10,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, Wabbit!")
+        List(0 ..< 5) { item in
+            Text("Hello, Wabbit!")
+                .foregroundColor(.green)
+            Image(systemName: "hare")
+
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .previewDevice(.init(rawValue: "iPhone 11 Pro Max"))
+            ContentView()
+                .previewDevice(.init(rawValue: "iPhone SE"))
+        }
     }
 }
