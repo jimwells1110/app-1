@@ -10,41 +10,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image("pancake")
-            HeaderView(label: "pancakes")
+        List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+            Image(systemName: "photo")
+            
+            VStack(alignment: .leading) {
+                Text("Hello, Wabbit!")
+                    .fontWeight(.semibold)
+                Text("Little Wabbits")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
         }
+        .padding(0.0)
+            
     }
+        
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-//            ContentView()
-//                .previewDevice(.init(rawValue: "iPhone 11 Pro Max"))
-            ContentView()
-                .previewDevice(.init(rawValue: "iPhone 7"))
-            
-//            ContentView()
-//                .previewDevice(.init(rawValue: "iPhone SE"))
-        }
-    }
-}
-
-// new file
-
-struct HeaderView: View {
-    let label: String
-    
-    var body: some View {
-        HStack {
-            Text(label)
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            
-            Spacer()
-        }
-        .padding()
+        ContentView()
     }
 }
 

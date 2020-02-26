@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261A6154240630380051A940 /* rab2.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 261A6152240630380051A940 /* rab2.imageset */; };
+		261A6155240630380051A940 /* rab1.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 261A6153240630380051A940 /* rab1.imageset */; };
 		26757A9B23FCF3E9004B2656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26757A9A23FCF3E9004B2656 /* AppDelegate.swift */; };
 		26757A9D23FCF3E9004B2656 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26757A9C23FCF3E9004B2656 /* SceneDelegate.swift */; };
 		26757A9F23FCF3E9004B2656 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26757A9E23FCF3E9004B2656 /* ContentView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		261A6152240630380051A940 /* rab2.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = rab2.imageset; path = Assets.xcassets/rab2.imageset; sourceTree = "<group>"; };
+		261A6153240630380051A940 /* rab1.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = rab1.imageset; path = Assets.xcassets/rab1.imageset; sourceTree = "<group>"; };
 		26757A9723FCF3E9004B2656 /* app 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26757A9A23FCF3E9004B2656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26757A9C23FCF3E9004B2656 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				26757A9A23FCF3E9004B2656 /* AppDelegate.swift */,
 				26757A9C23FCF3E9004B2656 /* SceneDelegate.swift */,
 				26757A9E23FCF3E9004B2656 /* ContentView.swift */,
+				261A6153240630380051A940 /* rab1.imageset */,
+				261A6152240630380051A940 /* rab2.imageset */,
 				26757AA023FCF3EA004B2656 /* Assets.xcassets */,
 				26757AA523FCF3EA004B2656 /* LaunchScreen.storyboard */,
 				26757AA823FCF3EA004B2656 /* Info.plist */,
@@ -134,8 +140,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				26757AA723FCF3EA004B2656 /* LaunchScreen.storyboard in Resources */,
+				261A6154240630380051A940 /* rab2.imageset in Resources */,
 				26757AA423FCF3EA004B2656 /* Preview Assets.xcassets in Resources */,
 				26757AA123FCF3EA004B2656 /* Assets.xcassets in Resources */,
+				261A6155240630380051A940 /* rab1.imageset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
